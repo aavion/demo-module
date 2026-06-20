@@ -42,7 +42,7 @@ return [
                 'ext-demo-module-public-backend',
                 'backend',
                 'ext.demo-module.navigation.backend',
-                '@backend/demo-module/shell.html.twig',
+                '@frontend/demo-module/frontend.html.twig',
                 sortOrder: 720,
             ),
             new ConfigurableStaticViewInjectionRoute(
