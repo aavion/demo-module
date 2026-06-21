@@ -49,21 +49,13 @@ final class DemoControllerTest extends WebTestCase
         parent::tearDown();
     }
 
-    public function testItRendersFrontendDemoShellFromDemoModule(): void
+    public function testItRendersDemoInfoPageFromDemoModule(): void
     {
         $this->client->request('GET', '/demo');
 
         self::assertResponseIsSuccessful();
-        self::assertSelectorTextContains('h1', 'Frontend shell demo');
+        self::assertSelectorTextContains('h1', 'Demo module info');
         self::assertSelectorTextContains('#demo-module-contract-title', 'What this demo contributes');
-    }
-
-    public function testItRendersBackendDemoShellFromDemoModule(): void
-    {
-        $this->client->request('GET', '/demo/backend');
-
-        self::assertResponseIsSuccessful();
-        self::assertSelectorTextContains('h1', 'Backend shell demo');
     }
 
     public function testItRendersTypographyDemoGuideFromDemoModule(): void
@@ -75,21 +67,14 @@ final class DemoControllerTest extends WebTestCase
         self::assertStringContainsString('```markdown', (string) $this->client->getResponse()->getContent());
     }
 
-    public function testItDoesNotRegisterTheRemovedFrontendDemoChildRoute(): void
-    {
-        $this->client->request('GET', '/demo/frontend');
-
-        self::assertResponseStatusCodeSame(404);
-    }
-
-    public function testItUsesConfiguredDemoRouteOnFrontendDemoShell(): void
+    public function testItUsesConfiguredDemoRouteOnInfoPage(): void
     {
         $this->setDemoRoute('demo2');
 
         $this->client->request('GET', '/demo2');
 
         self::assertResponseIsSuccessful();
-        self::assertSelectorExists('.system-button-primary[href="/demo2/backend"]');
+        self::assertSelectorExists('.system-button-primary[href="/demo2/typography"]');
 
         $this->client->request('GET', '/demo');
 

@@ -1,9 +1,7 @@
 ext:
   demo-module:
     navigation:
-      demo: 'Demo'
-      frontend: 'Frontend-Shell'
-      backend: 'Backend-Shell'
+      demo: 'Info'
       typography: 'Typografie-Guide'
     dynamic:
       after_content:
@@ -22,12 +20,12 @@ ext:
     widget: 'Demo-Modul-Widget'
     demo:
       kicker: 'System-UI'
-      frontend:
-        title: 'Frontend-Shell-Demo'
-        subtitle: 'Eine temporaere Vorschau fuer oeffentliches Theme-Layout, Navigation, Aktionen, Formulare, Feedback und Statusfarben.'
-        content_title: 'Content-Vorschau'
-        content_text: 'Diese Karte nutzt dieselben Fallback-Komponenten, die oeffentliches Content-Rendering wiederverwenden kann.'
-        rich_text: 'Lesbare Texte, fokussierte Aktionen und zurueckhaltende Kontraste sollen ueber Themes hinweg stabil bleiben.'
+      info:
+        title: 'Demo-Modul-Info'
+        subtitle: 'Ein kompaktes Fixture fuer konfigurierbare Extension-Routen, Settings, Assets, Uebersetzungen und Content-Injektionen.'
+        content_title: 'Fixture-Scope'
+        content_text: 'Diese Seite haelt das Demo-Modul auf Extension Contracts fokussiert, waehrend der Typografie-Guide das Markdown-Rendering abdeckt.'
+        rich_text: 'Das Modul bleibt standardmaessig inaktiv und traegt nur dokumentierte Runtime-Objekte bei, wenn es explizit aktiviert wird.'
       contract:
         kicker: 'Extension Contract'
         title: 'Was diese Demo beitraegt'
@@ -35,7 +33,7 @@ ext:
         items:
           routes:
             title: 'Konfigurierbare Routen'
-            text: 'Oeffentliche Demo, Backend-Shell und Typografie-Guide teilen sich einen setting-basierten Route-Parent.'
+            text: 'Info-Seite und Typografie-Guide teilen sich einen setting-basierten Route-Parent.'
           dynamic:
             title: 'Dynamischer Slot'
             text: 'Eine kleine After-Content-Injektion zeigt, wie Extensions Ausgaben an bestehenden Content anhaengen koennen.'
@@ -206,49 +204,15 @@ ext:
 
                 Auch Absaetze koennen Attribute erhalten.
                 {.demo-module-frontend-callout data-demo="typography"}
-      backend:
-        title: 'Backend-Shell-Demo'
-        nav_overview: 'Uebersicht'
-        overview_title: 'Operationsflaeche'
-        overview_text: 'Die Backend-Shell haelt Navigation, Status, Formulare, Operationen und Workspace-Bereiche optisch zusammen.'
-      editor:
-        title: 'Editor-Workspace'
-      setup:
-        title: 'Setup-Ablauf'
-        step: 'Schritt 1 von 2'
-        item_environment: 'Umgebung geprueft'
-        item_extensions: 'Extension Lifecycle bereit'
       actions:
         primary: 'Gegenstueck oeffnen'
         secondary: 'Sekundaere Aktion'
       empty:
         title: 'Empty State'
         message: 'Nutze diesen Zustand, wenn eine Liste, Tabelle oder ein Workflow noch keine Eintraege hat.'
-      form:
-        kicker: 'Formularvorschau'
-        title: 'Feldprimitive'
-        title_label: 'Titel'
-        status_label: 'Status'
-        body_label: 'Body'
-        help: 'Kurze Hilfetexte bleiben nah am Control.'
-        value: 'Demo-Wert'
-        body_value: 'Strukturierter Content kann dieselben Control-Abstaende nutzen.'
-        status_option: 'Entwurf'
-      status:
-        title: 'Statussprache'
       badges:
         success: 'Success'
         info: 'Info'
         warning: 'Warnung'
         error: 'Fehler'
         exception: 'Exception'
-      table:
-        title: 'Extensionuebersicht'
-        name: 'Name'
-        scope: 'Scope'
-        status: 'Status'
-        system: 'System-Extension'
-        theme: 'Aktives Theme'
-      operations:
-        discovery: 'Discovery abgeschlossen'
-        assets: 'Asset-Rebuild eingereiht'

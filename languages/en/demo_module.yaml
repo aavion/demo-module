@@ -1,9 +1,7 @@
 ext:
   demo-module:
     navigation:
-      demo: 'Demo'
-      frontend: 'Frontend shell'
-      backend: 'Backend shell'
+      demo: 'Info'
       typography: 'Typography guide'
     dynamic:
       after_content:
@@ -22,12 +20,12 @@ ext:
     widget: 'Demo module widget'
     demo:
       kicker: 'System UI'
-      frontend:
-        title: 'Frontend shell demo'
-        subtitle: 'A temporary preview for public theme layout, navigation, actions, forms, feedback, and status colors.'
-        content_title: 'Content preview'
-        content_text: 'This card uses the same fallback components that public content rendering can reuse.'
-        rich_text: 'Readable copy, focused actions, and restrained contrast should remain stable across themes.'
+      info:
+        title: 'Demo module info'
+        subtitle: 'A compact fixture for configurable extension routes, settings, assets, translations, and content injections.'
+        content_title: 'Fixture scope'
+        content_text: 'This page keeps the demo module focused on extension contracts while the typography guide covers Markdown rendering.'
+        rich_text: 'The module stays inactive by default and contributes only documented runtime objects when explicitly activated.'
       contract:
         kicker: 'Extension contract'
         title: 'What this demo contributes'
@@ -35,7 +33,7 @@ ext:
         items:
           routes:
             title: 'Configurable routes'
-            text: 'The public demo, backend shell, and typography guide share one setting-backed route parent.'
+            text: 'The info page and typography guide share one setting-backed route parent.'
           dynamic:
             title: 'Dynamic slot'
             text: 'A small after-content injection demonstrates how extensions can attach output to existing content.'
@@ -206,49 +204,15 @@ ext:
 
                 Paragraph attributes can also be attached.
                 {.demo-module-frontend-callout data-demo="typography"}
-      backend:
-        title: 'Backend shell demo'
-        nav_overview: 'Overview'
-        overview_title: 'Operational surface'
-        overview_text: 'The backend shell keeps navigation, status, forms, operations, and workspace areas visually aligned.'
-      editor:
-        title: 'Editor workspace'
-      setup:
-        title: 'Setup flow'
-        step: 'Step 1 of 2'
-        item_environment: 'Environment checked'
-        item_extensions: 'Extension lifecycle ready'
       actions:
         primary: 'Open counterpart'
         secondary: 'Secondary action'
       empty:
         title: 'Empty state'
         message: 'Use this state when a list, table, or workflow has no entries yet.'
-      form:
-        kicker: 'Form preview'
-        title: 'Field primitives'
-        title_label: 'Title'
-        status_label: 'Status'
-        body_label: 'Body'
-        help: 'Short help text stays close to the control.'
-        value: 'Demo value'
-        body_value: 'Structured content can use the same control spacing.'
-        status_option: 'Draft'
-      status:
-        title: 'Status language'
       badges:
         success: 'Success'
         info: 'Info'
         warning: 'Warning'
         error: 'Error'
         exception: 'Exception'
-      table:
-        title: 'Extension overview'
-        name: 'Name'
-        scope: 'Scope'
-        status: 'Status'
-        system: 'System extension'
-        theme: 'Active theme'
-      operations:
-        discovery: 'Discovery completed'
-        assets: 'Asset rebuild queued'

@@ -39,13 +39,6 @@ return [
                 sortOrder: 700,
             ),
             new ConfigurableStaticViewInjectionRoute(
-                'ext-demo-module-public-backend',
-                'backend',
-                'ext.demo-module.navigation.backend',
-                '@frontend/demo-module/frontend.html.twig',
-                sortOrder: 720,
-            ),
-            new ConfigurableStaticViewInjectionRoute(
                 'ext-demo-module-public-typography',
                 'typography',
                 'ext.demo-module.navigation.typography',
